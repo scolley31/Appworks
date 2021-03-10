@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.navigation.ProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/frameLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/avator"
+            android:layout_width="411dp"
+            android:layout_height="353dp"
+            android:layout_marginTop="16dp"
+            android:contentDescription="@string/avatar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/_0201020_200039_frame_3"
+            tools:src="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/name"
+        android:layout_width="179dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/name"
+        android:textColor="@color/design_default_color_background"
+        app:layout_constraintEnd_toStartOf="@+id/Nick_Name"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avator" />
+
+        <TextView
+            android:id="@+id/Nametext"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="29dp"
+            android:text="@string/name_text"
+            android:textColor="@color/design_default_color_on_secondary"
+            app:layout_constraintBottom_toTopOf="@+id/AboutMe"
+            app:layout_constraintEnd_toStartOf="@+id/NickName_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <Button
+        android:id="@+id/Nick_Name"
+        android:layout_width="179dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/nickname"
+        android:textColor="@color/design_default_color_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/avator" />
+
+        <TextView
+            android:id="@+id/NickName_text"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="29dp"
+            android:text="@string/Nick_name_text"
+            android:textColor="@color/design_default_color_on_secondary"
+            android:textColorHighlight="@color/design_default_color_on_secondary"
+            app:layout_constraintBottom_toTopOf="@+id/AboutMe"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Nametext"
+            app:layout_constraintTop_toBottomOf="@+id/Nick_Name"
+            app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/AboutMe"
+        android:layout_width="393dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/aboutme"
+        android:textColor="@color/design_default_color_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/avator"
+        app:layout_constraintVertical_bias="0.446" />
+
+    <TextView
+        android:id="@+id/About_me"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/aboutme_text"
+        android:textColor="@color/design_default_color_on_secondary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/AboutMe"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
