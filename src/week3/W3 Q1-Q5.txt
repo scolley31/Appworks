@@ -1,0 +1,32 @@
+
+1. What is ​Encapsulation​? Try to list out the benefits of Encapsulation
+a. Encapsulation is one of the key concepts in OOP. 
+b. Encapsulation means that hiding date and protects the code by preventing access from outside class.
+c. No outside class can access it but can allow outdie claas to read and write data on their data field by getter and setter method.
+
+
+2. Try to explain what is ​enum​ and why we use them.
+Enum is one kind of class for type-safe and readable code. In next question, we can put some Systematical data like direction ,color and etc.
+Users use Enum can directly show in code and no need to worry about type mistake or declaring other variable number to replace them.
+
+
+3. How to use ​enum​ in Kotlin? Attach a sample code that use enum in Kotlin.
+
+enum class Color{
+    RED, GREEN, BLUE
+}
+
+Based on this enum class. users don't need to worry about type mistake and can directly show the in the code.
+
+
+4. What are the ​differences​ between ​LinearLayout​ and ​RelativeLayout​? Try to explain indetails.
+
+LinearLayout that arranges other views either horizontally in a single column or vertically in a single row.
+RelativeLayout​ where the positions of the children can be described in relation to each other or to the parent.
+
+5. Try to explain the benefits of ​ConstraintLayout​. Why you should use it?
+a. You can make it responsive to screens and resolutions.
+b. Usually flatter view hierarchy.
+c. Optimized for laying out its views.
+d. Free-form: place views anywhere, and the editor helps add constraints.
+After using constraintlayout, we can define constrained more formally and easily. 
