@@ -1,0 +1,41 @@
+1. What is ​Inheritance​? Try to explain in Mandarin.
+
+Inheritance (繼承) 是在OOP(object-oriented programming)裡一個重要的特色。
+因為此特色，我們可以繼承從其他分類(class)或物件(object)的特性並繼續使用，而不需要重複的宣告相同的變數或寫相同的功能，使程式碼保持簡潔。 
+(在英文裡，稱為"dry"，表示讓程式碼盡量不複製同樣的內容)
+
+
+2. How to ​split​ a string in Android? Explain your understanding, and even better to attachsome sample code
+In public, we use String[] to spilt string in android and case show in following code.
+
+String eng = "abcdefghijklmnopqrstuvwxyz";
+String[] array = eng.split("k");
+for(int i = 0 ; i < array.length ; i ++){ System.out.println("array["+i+"] = "+array[i]); } //array[0] = abcdefghij //array[1] = lmnopqrstuvwxyz
+
+
+3. What kind of ​key-value​ pair collection do we use in Android? Attach a sample code thatuses for-loop to print each key-value pair.
+Map; An object that maps keys to values. A map cannot contain duplicate keys; each key can map to at most one value.
+
+Map<String, String> map = ...
+for (Map.Entry<String, String> entry : map.entrySet()) {
+    System.out.println(entry.getKey() + "/" + entry.getValue());
+}
+
+
+4. What’s the ​difference​ between ArrayList and LinkedList? Try to explain in Mandarin.
+Arraylist與Linkedlist皆為資料結構的一種型態，因為儲存的方式不同，導致有不同特性。
+1. Arraylist是抓取一連續的記憶空間來儲存資料，Linkedlist則是不連續的空間，並串接再一起。
+2. Arraylist因為是在連續且已經宣告固定的記憶體空間內，讀取時間很快;
+Linkedlist每筆資料是以串接的形式連接再一起，記憶體位置不連續，一筆資料除資料本身以外，還指定了下筆資料的位置，找資料需要從第一筆資料開始，因此讀取的速度慢。
+3. Arraylist因為資料已經儲存在固定的記憶體空間內，插入與刪除資料的同時也會影響到其他資料的記憶體空間，處理插入與刪除資料的時間較長；
+Linkedlist因為資料儲存在不同空間內，插入與刪除資料只需要修改上一筆資料指定到下一筆資料的記憶體空間，不會影響到其他資料的記憶體空間，處理插入與刪除資料的時間較長。
+
+
+5. What are ​Value Type​ variables? List out the Value Type variables you know.
+A date type is a value type if it holds a data value.
+The following data types are some kinds of value type: byte,char,double,int,long.
+
+
+6. What’s the ​maximum​ value of ​Int​? If you want to represent integers larger than the limit,what should you do instead of using int variables?
+For interger numbers, the size of Int is about 32bits and range from -217483648(-2^31) to 2147483647(2^31-1). So the maximum value of Int is 2147483647(2^31-1).
+If one interger are larger than the limit of int, we should use another Interger type named Long to represent it. the size of Int is about 64bits and range from (-2^63) to (2^63-1).
