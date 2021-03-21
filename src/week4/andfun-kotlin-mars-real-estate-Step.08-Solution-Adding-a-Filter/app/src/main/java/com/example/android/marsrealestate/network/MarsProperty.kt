@@ -39,5 +39,15 @@ data class MarsProperty(
     val isRental
         get() = type == "rent"
 
+    val displayType: String
+        get() = when(isRental){
+            true -> "For Rent"
+            false -> "For Sale"
+        }
 
+    val displayPrice: String
+        get() = when(isRental){
+            true -> "$price/month"
+            false -> "$price"
+        }
 }
